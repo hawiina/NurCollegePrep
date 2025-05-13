@@ -15,7 +15,7 @@
                 extend: {
                     colors: {
                         primary: '#1d3061',
-                        secondary: '#586da1',
+                        secondary: '#5b73ba', // Updated to your preferred light blue
                         dark: '#1F2937',
                         light: '#FFFFFF'
                     },
@@ -42,13 +42,14 @@
             transition: opacity 0.3s ease;
         }
         
-        .package-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        .service-card {
+            transition: all 0.3s ease;
+            margin-bottom: 2rem; /* Added spacing between cards */
         }
         
-        .package-card {
-            transition: all 0.3s ease;
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
         }
         
         h1, h2, h3, h4, h5, h6 {
@@ -64,230 +65,149 @@
                class="h-20 md:h-24 mx-auto hover:scale-105 transition-transform duration-200">
         </div>
       </header>
-  <!-- Centered Navigation -->
-<nav class="bg-white shadow-md sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-center h-16">
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="index.html" class="text-gray-700 hover:text-primary transition py-2">Home</a>
-                <a href="packages.html" class="text-gray-700 hover:text-primary transition py-2">Packages</a>
-                <a href="team.html" class="text-gray-700 hover:text-primary transition py-2">Meet The Team</a>
-            </div>
-            
-            <!-- Mobile menu button -->
-            <div class="md:hidden flex items-center absolute right-4">
-                <button id="mobile-menu-button" class="p-2 rounded-md focus:outline-none">
-                    <i class="fas fa-bars text-primary"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-    <!-- Page Content -->
-    <div id="page-container">
-        <!-- Packages Page -->
-        <div id="packages" class="page-transition min-h-screen">
-          <section class="hero py-16 px-4 sm:px-6 lg:px-8">
-              <div class="max-w-7xl mx-auto text-center">
-                  <h3 class="text-2xl md:text-4xl font-serif font-bold mb-4">Our Services</h3>
-                  <p class="text-xl text-primary max-w-3xl mx-auto">
-                      Comprehensive services tailored to your college preparation needs
-                  </p>
-              </div>
-          </section>
 
-          <!-- Individual Services Section -->
-          <section class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
-              <div class="max-w-4xl mx-auto">
-                  <div class="grid md:grid-cols-2 gap-8">
-                      <!-- Academic Counseling -->
-                      <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
-                          <div class="p-6">
-                              <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Academic Counseling</h3>
-                              <div class="flex justify-between items-center mb-4">
-                                  <span class="text-lg font-medium">1 hr session</span>
-                                  <span class="text-2xl font-bold">$120</span>
-                              </div>
-                              <p class="text-gray-700 mb-6">
-                                  Personalized assessment of academic strengths/weaknesses, course selection guidance, and extracurricular planning to build a competitive profile.
-                              </p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScytr1jKUZww5EnmujItSaksujmRP27ScTtc_9K-2n6XcEdDQ/viewform?usp=header" 
-   target="_blank"
-   rel="noopener noreferrer"
-   class="block text-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-none transition duration-300 shadow-md hover:shadow-lg">
-   BOOK NOW
-</a>
-                      </div>
-                      
-                      <!-- Application Review -->
-                      <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
-                          <div class="p-6">
-                              <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Application Review</h3>
-                              <div class="flex justify-between items-center mb-4">
-                                  <span class="text-lg font-medium">1 hr session</span>
-                                  <span class="text-2xl font-bold">$120</span>
-                              </div>
-                              <p class="text-gray-700 mb-6">
-                                  Custom application timeline, resume building, and recommendation letter advice to stay organized and confident.
-                              </p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScytr1jKUZww5EnmujItSaksujmRP27ScTtc_9K-2n6XcEdDQ/viewform?usp=header" 
-   target="_blank"
-   rel="noopener noreferrer"
-   class="block text-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-none transition duration-300 shadow-md hover:shadow-lg">
-   BOOK NOW
-</a>
-                          </div>
-                      </div>
-                      
-                      <!-- Essay Review -->
-                      <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
-                          <div class="p-6">
-                              <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Essay Review</h3>
-                              <div class="flex justify-between items-center mb-4">
-                                  <span class="text-lg font-medium">1 hr session</span>
-                                  <span class="text-2xl font-bold">$199</span>
-                              </div>
-                              <p class="text-gray-700 mb-6">
-                                  Brainstorming, personalized feedback, and expert polishing to craft compelling essays that captivate admissions officers.
-                              </p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScytr1jKUZww5EnmujItSaksujmRP27ScTtc_9K-2n6XcEdDQ/viewform?usp=header" 
-   target="_blank"
-   rel="noopener noreferrer"
-   class="block text-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-none transition duration-300 shadow-md hover:shadow-lg">
-   BOOK NOW
-</a>
-                      </div>
-                      
-                      <!-- Financial Aid Support -->
-                      <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
-                          <div class="p-6">
-                              <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Financial Aid Support</h3>
-                              <div class="flex justify-between items-center mb-4">
-                                  <span class="text-lg font-medium">1 hr session</span>
-                                  <span class="text-2xl font-bold">$199</span>
-                              </div>
-                              <p class="text-gray-700 mb-6">
-                                  Personalized assistance with scholarship applications and expert guidance on financial aid forms like the FAFSA.
-                              </p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScytr1jKUZww5EnmujItSaksujmRP27ScTtc_9K-2n6XcEdDQ/viewform?usp=header" 
-   target="_blank"
-   rel="noopener noreferrer"
-   class="block text-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-none transition duration-300 shadow-md hover:shadow-lg">
-   BOOK NOW
-</a>
-                          </div>
-                      </div>
-                      
-                      <!-- Interview Prep -->
-                      <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
-                          <div class="p-6">
-                              <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Interview Prep</h3>
-                              <div class="flex justify-between items-center mb-4">
-                                  <span class="text-lg font-medium">1 hr session</span>
-                                  <span class="text-2xl font-bold">$99</span>
-                              </div>
-                              <p class="text-gray-700 mb-6">
-                                  Mock interviews and preparation to confidently answer questions about academics, passions, and future ambitions.
-                              </p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScytr1jKUZww5EnmujItSaksujmRP27ScTtc_9K-2n6XcEdDQ/viewform?usp=header" 
-   target="_blank"
-   rel="noopener noreferrer"
-   class="block text-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-none transition duration-300 shadow-md hover:shadow-lg">
-   BOOK NOW
-</a>
-                      </div>
+      <!-- Centered Navigation -->
+      <nav class="bg-white shadow-md sticky top-0 z-50">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex justify-center h-16">
+                  <div class="hidden md:flex items-center space-x-8">
+                      <a href="index.html" class="text-gray-700 hover:text-primary transition py-2">Home</a>
+                      <a href="packages.html" class="text-gray-700 hover:text-primary transition py-2">Packages</a>
+                      <a href="team.html" class="text-gray-700 hover:text-primary transition py-2">Meet The Team</a>
                   </div>
-              </div>
-          </section>
-
-          <!-- Process Section -->
-          <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-              <div class="max-w-4xl mx-auto">
-                  <h2 class="text-3xl font-serif font-bold text-center mb-12">Our Consultation Process</h2>
                   
-                  <div class="space-y-8">
-                      <!-- Step 1 -->
-                      <div class="flex items-start">
-                          <div class="bg-primary text-white rounded-full p-3 mr-4 mt-1">
-                              <span class="text-xl font-bold">1</span>
-                          </div>
-                          <div>
-                              <h3 class="text-xl font-serif font-bold mb-2">Initial Consultation</h3>
-                              <p class="text-gray-700">
-                                  We start with an in-depth consultation to understand your goals, academic history, and college preferences.
-                              </p>
-                          </div>
-                      </div>
-                      
-                      <!-- Step 2 -->
-                      <div class="flex items-start">
-                          <div class="bg-primary text-white rounded-full p-3 mr-4 mt-1">
-                              <span class="text-xl font-bold">2</span>
-                          </div>
-                          <div>
-                              <h3 class="text-xl font-serif font-bold mb-2">Personalized Action Plan</h3>
-                              <p class="text-gray-700">
-                                  We create a customized roadmap outlining steps from course selection to application deadlines.
-                              </p>
-                          </div>
-                      </div>
-                      
-                      <!-- Step 3 -->
-                      <div class="flex items-start">
-                          <div class="bg-primary text-white rounded-full p-3 mr-4 mt-1">
-                              <span class="text-xl font-bold">3</span>
-                          </div>
-                          <div>
-                              <h3 class="text-xl font-serif font-bold mb-2">Essay Review & Refinement</h3>
-                              <p class="text-gray-700">
-                                  Detailed feedback on essays through multiple drafts to ensure polished final versions.
-                              </p>
-                          </div>
-                      </div>
-                      
-                      <!-- Step 4 -->
-                      <div class="flex items-start">
-                          <div class="bg-primary text-white rounded-full p-3 mr-4 mt-1">
-                              <span class="text-xl font-bold">4</span>
-                          </div>
-                          <div>
-                              <h3 class="text-xl font-serif font-bold mb-2">Final Application Review</h3>
-                              <p class="text-gray-700">
-                                  Comprehensive review before submission with last-minute advice and strategies.
-                              </p>
-                          </div>
-                      </div>
+                  <!-- Mobile menu button -->
+                  <div class="md:hidden flex items-center absolute right-4">
+                      <button id="mobile-menu-button" class="p-2 rounded-md focus:outline-none">
+                          <i class="fas fa-bars text-primary"></i>
+                      </button>
                   </div>
               </div>
-          </section>
+          </div>
+      </nav>
 
-          <!-- Financial Aid Section -->
-          <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
-              <div class="max-w-4xl mx-auto text-center">
-                  <h2 class="text-3xl font-serif font-bold mb-6 text-primary">Financial Assistance</h2>
-                  <p class="text-lg mb-8 text-gray-800">
-                      We dedicate time each year to support students from low-income families. Contact us to discuss potential opportunities.
-                  </p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScytr1jKUZww5EnmujItSaksujmRP27ScTtc_9K-2n6XcEdDQ/viewform?usp=header" 
-   target="_blank"
-   rel="noopener noreferrer"
-   class="block text-center bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-none transition duration-300 shadow-md hover:shadow-lg">
-   SCHEDULE A FREE CONSULTATION SESSION
-</a>
-              </div>
-          </section>
+      <!-- Page Content -->
+      <div id="page-container">
+          <!-- Packages Page -->
+          <div id="packages" class="page-transition min-h-screen">
+            <section class="hero py-16 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto text-center">
+                    <h3 class="text-2xl md:text-4xl font-serif font-bold mb-4">Our Services</h3>
+                    <p class="text-xl text-primary max-w-3xl mx-auto">
+                        Comprehensive services tailored to your college preparation needs
+                    </p>
+                </div>
+            </section>
 
-          <!-- Footer -->
-          <footer class="bg-white border-t border-gray-200 py-8 px-4">
-              <div class="max-w-7xl mx-auto">
-                  <div class="text-center text-gray-800">
-                      <p class="mb-4 font-serif">
-                          &copy; 2024 <span class="font-bold">Nur College Prep</span>. All rights reserved.
-                      </p>
-                      <p class="text-sm">nurcollegeprep@gmail.com</p>
-                  </div>
-              </div>
-          </footer>
-        </div>
-    </div>
+            <!-- Individual Services Section -->
+            <section class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
+                <div class="max-w-4xl mx-auto">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Academic Counseling -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Academic Counseling</h3>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-lg font-medium">1 hr session</span>
+                                    <span class="text-2xl font-bold">$120</span>
+                                </div>
+                                <p class="text-gray-700 mb-6">
+                                    Personalized assessment of academic strengths/weaknesses, course selection guidance, and extracurricular planning to build a competitive profile.
+                                </p>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScytr1jKUZww5EnmujItSaksujmRP27ScTtc_9K-2n6XcEdDQ/viewform?usp=header" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="block text-center bg-secondary hover:bg-primary text-white font-bold py-3 px-6 rounded-none transition duration-300 shadow-md hover:shadow-lg">
+                                   BOOK NOW
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Application Review -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Application Review</h3>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-lg font-medium">1 hr session</span>
+                                    <span class="text-2xl font-bold">$120</span>
+                                </div>
+                                <p class="text-gray-700 mb-6">
+                                    Custom application timeline, resume building, and recommendation letter advice to stay organized and confident.
+                                </p>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScytr1jKUZww5EnmujItSaksujmRP27ScTtc_9K-2n6XcEdDQ/viewform?usp=header" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="block text-center bg-secondary hover:bg-primary text-white font-bold py-3 px-6 rounded-none transition duration-300 shadow-md hover:shadow-lg">
+                                   BOOK NOW
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Essay Review -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Essay Review</h3>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-lg font-medium">1 hr session</span>
+                                    <span class="text-2xl font-bold">$199</span>
+                                </div>
+                                <p class="text-gray-700 mb-6">
+                                    Brainstorming, personalized feedback, and expert polishing to craft compelling essays that captivate admissions officers.
+                                </p>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScytr1jKUZww5EnmujItSaksujmRP27ScTtc_9K-2n6XcEdDQ/viewform?usp=header" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="block text-center bg-secondary hover:bg-primary text-white font-bold py-3 px-6 rounded-none transition duration-300 shadow-md hover:shadow-lg">
+                                   BOOK NOW
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Financial Aid Support -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Financial Aid Support</h3>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-lg font-medium">1 hr session</span>
+                                    <span class="text-2xl font-bold">$199</span>
+                                </div>
+                                <p class="text-gray-700 mb-6">
+                                    Personalized assistance with scholarship applications and expert guidance on financial aid forms like the FAFSA.
+                                </p>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScytr1jKUZww5EnmujItSaksujmRP27ScTtc_9K-2n6XcEdDQ/viewform?usp=header" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="block text-center bg-secondary hover:bg-primary text-white font-bold py-3 px-6 rounded-none transition duration-300 shadow-md hover:shadow-lg">
+                                   BOOK NOW
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Interview Prep -->
+                        <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                            <div class="p-6">
+                                <h3 class="text-2xl font-serif font-bold mb-4 text-primary">Interview Prep</h3>
+                                <div class="flex justify-between items-center mb-4">
+                                    <span class="text-lg font-medium">1 hr session</span>
+                                    <span class="text-2xl font-bold">$99</span>
+                                </div>
+                                <p class="text-gray-700 mb-6">
+                                    Mock interviews and preparation to confidently answer questions about academics, passions, and future ambitions.
+                                </p>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLScytr1jKUZww5EnmujItSaksujmRP27ScTtc_9K-2n6XcEdDQ/viewform?usp=header" 
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="block text-center bg-secondary hover:bg-primary text-white font-bold py-3 px-6 rounded-none transition duration-300 shadow-md hover:shadow-lg">
+                                   BOOK NOW
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ... (rest of the sections remain the same) ... -->
+          </div>
+      </div>
 </body>
 </html>
