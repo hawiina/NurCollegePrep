@@ -1,0 +1,27 @@
+HTML tags used:
+<p>
+<b>
+<i>
+<dt>
+<dd>
+<ul>
+<button>
+<a>
+<br>
+<img>
+<script>
+<meta>
+
+CSS properties used:
+font-family
+background-color
+height
+width
+margin
+
+
+Javascript:
+Javascript was used on the Family page to make the hobbies page button change color when you hover above it.
+
+Bootstrap:
+I used bootstrap to make an alert that serves as a button to the home page

@@ -1,0 +1,35 @@
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+    text-indent: 20px;
+    margin-bottom: 20px;
+    color: #35007E;
+
+}
+
+body {
+    font-family: 'Garamond', 'Times New Roman', Times, serif;
+    background-color: #ECEBEA;
+    margin: 20px;
+}
+
+h1 {
+    color: #7800FF;
+    font-family: 'Garamond', 'Times New Roman', Times, serif;
+}
+
+h5 {
+    color: #7800FF;
+    font-family: 'Garamond', 'Times New Roman', Times, serif;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
+
+button:hover {
+    background-color: #CB9DFF;
+}
