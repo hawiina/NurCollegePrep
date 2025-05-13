@@ -89,7 +89,7 @@
         <div id="home" class="page-transition min-h-screen">
           <section class="hero flex flex-col items-center justify-center text-center pt-12 pb-0">
               <div class="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-                  <h1 class="text-4xl md:text-5xl font-serif font-bold mb-2">Achieve your fullest academic potential</h1>
+                  <h1 class="text-4xl md:text-5xl font-serif font-bold mb-2">Achieve Your Fullest Academic Potential</h1>
                   <p class="text-xl md:text-2xl mb-8 text-primary">Tailored academic consulting to take your academic journey to the next level</p>
                   
                   <a href="#contact" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">
@@ -159,69 +159,109 @@
               </div>
           </section>
 
-          <!-- FAQ Section -->
-          <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white" id="faq">
-              <div class="max-w-4xl mx-auto">
-                  <h2 class="text-3xl font-serif font-bold text-center mb-12">Frequently Asked Questions</h2>
-                  <p class="text-center mb-8">Please navigate to the Contact Us page if you can not find an answer to your question.</p>
-                  
-                  <div class="space-y-6">
-                      <!-- FAQ Item 1 -->
-                      <div class="border-b border-gray-200 pb-6">
-                          <h3 class="text-xl font-serif font-bold mb-2">Do I need to have my college list decided before starting to work with you?</h3>
-                          <p class="text-gray-700">Not necessarily. We can help you explore potential schools that align with your academic and personal goals. However, having an idea of your preferences is helpful.</p>
-                      </div>
-                      
-                      <!-- FAQ Item 2 -->
-                      <div class="border-b border-gray-200 pb-6">
-                          <h3 class="text-xl font-serif font-bold mb-2">How do I get started?</h3>
-                          <p class="text-gray-700">Simply fill out our Interest form by clicking on the "Get Started Now" button, or contact us via our email, nurcollegeprep@gmail.com. We'll schedule an initial complementary consultation to discuss your goals and determine the best plan for your needs.</p>
-                      </div>
-                      
-                      <!-- FAQ Item 3 -->
-                      <div class="border-b border-gray-200 pb-6">
-                          <h3 class="text-xl font-serif font-bold mb-2">How many essay drafts do I get with your service?</h3>
-                          <p class="text-gray-700">We provide up to three rounds of feedback on each essay to ensure it's polished and impactful.</p>
-                      </div>
-                      
-                      <!-- FAQ Item 4 -->
-                      <div class="border-b border-gray-200 pb-6">
-                          <h3 class="text-xl font-serif font-bold mb-2">Do you assist with financial aid applications?</h3>
-                          <p class="text-gray-700">Yes, we can guide you through the financial aid process, including completing the FAFSA, understanding CSS Profile requirements, and exploring scholarship opportunities. Our goal is to help you make informed decisions about funding your education.</p>
-                      </div>
-                      
-                      <!-- FAQ Item 5 -->
-                      <div class="border-b border-gray-200 pb-6">
-                          <h3 class="text-xl font-serif font-bold mb-2">What types of students do you work with?</h3>
-                          <p class="text-gray-700">We work with a diverse range of students, from those targeting competitive schools to those looking for the best fit based on their unique goals and aspirations. Whether you're a high school student, transfer applicant, or international student, we're here to support you.</p>
-                      </div>
-                      
-                      <!-- FAQ Item 6 -->
-                      <div class="border-b border-gray-200 pb-6">
-                          <h3 class="text-xl font-serif font-bold mb-2">How long does the process usually take?</h3>
-                          <p class="text-gray-700">The timeline depends on the scope of services you need. For comprehensive guidance, we recommend starting at least 6–12 months before application deadlines to allow ample time for brainstorming, drafting, and refining all aspects of your application.</p>
-                      </div>
-                      
-                      <!-- FAQ Item 7 -->
-                      <div class="border-b border-gray-200 pb-6">
-                          <h3 class="text-xl font-serif font-bold mb-2">What if I need help with only one part of my application?</h3>
-                          <p class="text-gray-700">We offer à la carte services to address specific needs, such as essay feedback, interview preparation, or crafting a college list. You can choose the services that best suit your situation.</p>
-                      </div>
-                      
-                      <!-- FAQ Item 8 -->
-                      <div class="border-b border-gray-200 pb-6">
-                          <h3 class="text-xl font-serif font-bold mb-2">Can parents participate in the process?</h3>
-                          <p class="text-gray-700">Absolutely! We value parental involvement and encourage open communication. Parents can attend meetings, review materials, and ask questions to stay informed and engaged throughout the process.</p>
-                      </div>
-                      
-                      <!-- FAQ Item 9 -->
-                      <div class="pb-6">
-                          <h3 class="text-xl font-serif font-bold mb-2">How are sessions conducted?</h3>
-                          <p class="text-gray-700">We offer flexible options for sessions, including virtual meetings via video calls and phone consultations. We strive to accommodate your schedule and preferences.</p>
-                      </div>
-                  </div>
-              </div>
-          </section>
+              <!-- Updated FAQ Section with Dropdown -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white" id="faq">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-serif font-bold text-center mb-12">Frequently Asked Questions</h2>
+            <p class="text-center mb-8">Please navigate to the Contact Us page if you can not find an answer to your question.</p>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <h3 class="text-xl font-serif font-bold">Do I need to have my college list decided before starting to work with you?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4">
+                        <p class="text-gray-700">Not necessarily. We can help you explore potential schools that align with your academic and personal goals. However, having an idea of your preferences is helpful.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <h3 class="text-xl font-serif font-bold">How do I get started?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4">
+                        <p class="text-gray-700">Simply fill out our Interest form by clicking on the "Get Started Now" button, or contact us via our email, nurcollegeprep@gmail.com. We'll schedule an initial complementary consultation to discuss your goals and determine the best plan for your needs.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <h3 class="text-xl font-serif font-bold">How many essay drafts do I get with your service?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4">
+                        <p class="text-gray-700">We provide up to three rounds of feedback on each essay to ensure it's polished and impactful.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <h3 class="text-xl font-serif font-bold">Do you assist with financial aid applications?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4">
+                        <p class="text-gray-700">Yes, we can guide you through the financial aid process, including completing the FAFSA, understanding CSS Profile requirements, and exploring scholarship opportunities. Our goal is to help you make informed decisions about funding your education.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <h3 class="text-xl font-serif font-bold">What types of students do you work with?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4">
+                        <p class="text-gray-700">We work with a diverse range of students, from those targeting competitive schools to those looking for the best fit based on their unique goals and aspirations. Whether you're a high school student, transfer applicant, or international student, we're here to support you.</p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 6 -->
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-toggle w-full text-left p-4 bg-gray-50 hover:bg-gray-100 transition flex justify-between items-center">
+                        <h3 class="text-xl font-serif font-bold">How long does the process usually take?</h3>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden p-4">
+                        <p class="text-gray-700">The timeline depends on the scope of services you need. For comprehensive guidance, we recommend starting at least 6–12 months before application deadlines to allow ample time for brainstorming, drafting, and refining all aspects of your application.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this script for the FAQ toggle functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle content visibility
+                    content.classList.toggle('hidden');
+                    
+                    // Rotate icon
+                    icon.classList.toggle('rotate-180');
+                    
+                    // Close other open FAQs
+                    faqToggles.forEach(otherToggle => {
+                        if (otherToggle !== toggle) {
+                            otherToggle.nextElementSibling.classList.add('hidden');
+                            otherToggle.querySelector('i').classList.remove('rotate-180');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 
           <!-- Contact Section -->
           <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50" id="contact">
@@ -275,4 +315,42 @@
                           <form>
                               <div class="mb-4">
                                   <label for="name" class="block mb-2">Name</label>
-                                  <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none
+                                  <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                              </div>
+                              <div class="mb-4">
+                                  <label for="email" class="block mb-2">Email</label>
+                                  <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                              </div>
+                              <div class="mb-4">
+                                  <label for="message" class="block mb-2">Message</label>
+                                  <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                              </div>
+                              <button type="submit" class="bg-primary hover:bg-secondary text-white font-bold py-2 px-6 rounded-lg transition duration-300">
+                                  Send Message
+                              </button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Footer -->
+          <footer class="bg-white border-t border-gray-200 py-8 px-4">
+              <div class="max-w-7xl mx-auto">
+                  <div class="text-center text-gray-800">
+                      <!-- Copyright -->
+                      <p class="mb-4 font-serif">
+                          &copy; 2024 <span class="font-bold">Nur College Prep</span>. All rights reserved.
+                      </p>
+                      
+                      <!-- Business Info -->
+                      <div class="mb-6 text-sm">
+                          <p>nurcollegeprep@gmail.com</p>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+        </div>
+    </div>
+</body>
+</html>
