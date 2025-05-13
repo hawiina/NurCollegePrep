@@ -1,10 +1,9 @@
-
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - The Somali Table</title>
+    <title>Meet The Team | Nur College Prep</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,8 +14,8 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#7D0044',
-                        secondary: '#DB63A4',
+                        primary: '#1d3061',
+                        secondary: '#586da1',
                         dark: '#1F2937',
                         light: '#FFFFFF'
                     },
@@ -34,34 +33,48 @@
             background-color: #FFFFFF;
             color: #000000;
         }
+        
+        .hero {
+            background-color: #FFFFFF;
+        }
+        
+        .page-transition {
+            transition: opacity 0.3s ease;
+        }
+        
         .team-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
         }
+        
+        .team-card {
+            transition: all 0.3s ease;
+        }
+        
         h1, h2, h3, h4, h5, h6 {
-            color: #7D0044;
+            color: #1d3061;
         }
     </style>
 </head>
 <body>
     <header class="bg-primary py-4 text-center shadow-md">
         <div class="max-w-7xl mx-auto px-4">
-          <img src="thesomalitable.png" 
-               alt="The Somali Table Logo" 
+          <img src="assets/logo.png" 
+               alt="Nur College Prep Logo" 
                class="h-20 md:h-24 mx-auto hover:scale-105 transition-transform duration-200">
         </div>
       </header>
   <!-- Centered Navigation -->
 <nav class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-center h-16"> <!-- Changed from justify-between to justify-center -->
+        <div class="flex justify-center h-16">
             <div class="hidden md:flex items-center space-x-8">
                 <a href="index.html" class="text-gray-700 hover:text-primary transition py-2">Home</a>
-                <a href="menu.html" class="text-gray-700 hover:text-primary transition py-2">Menu</a>
-                <a href="story.html" class="text-gray-700 hover:text-primary transition py-2">Our Story</a>
+                <a href="packages.html" class="text-gray-700 hover:text-primary transition py-2">Packages</a>
+                <a href="team.html" class="text-gray-700 hover:text-primary transition py-2">Meet The Team</a>
             </div>
             
-            <!-- Mobile menu button (now centered with absolute positioning) -->
+            <!-- Mobile menu button -->
             <div class="md:hidden flex items-center absolute right-4">
                 <button id="mobile-menu-button" class="p-2 rounded-md focus:outline-none">
                     <i class="fas fa-bars text-primary"></i>
@@ -69,86 +82,197 @@
             </div>
         </div>
     </div>
-    
-    <!-- Mobile menu (unchanged) -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4">
-        <div class="flex flex-col space-y-2">
-            <a href="index.html" class="text-gray-700 hover:text-primary transition py-2">Home</a>
-            <a href="menu.html" class="text-gray-700 hover:text-primary transition py-2">Menu</a>
-            <a href="story.html" class="text-gray-700 hover:text-primary transition py-2">Our Story</a>
+
+    <!-- Page Content -->
+    <div id="page-container">
+        <!-- Team Page -->
+        <div id="team" class="page-transition min-h-screen">
+          <section class="hero py-16 px-4 sm:px-6 lg:px-8">
+              <div class="max-w-7xl mx-auto text-center">
+                  <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Meet Our Team</h1>
+                  <p class="text-xl text-primary max-w-3xl mx-auto mb-12">
+                      Our experienced team is dedicated to helping you achieve your academic goals
+                  </p>
+              </div>
+          </section>
+
+          <!-- Team Members -->
+          <section class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
+              <div class="max-w-4xl mx-auto">
+                  <div class="space-y-12">
+                      <!-- Team Member 1 -->
+                      <div class="team-card bg-white rounded-lg shadow-md overflow-hidden">
+                          <div class="md:flex">
+                              <div class="md:w-1/3">
+                                  <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                                       alt="Hawa Khalif"
+                                       class="w-full h-64 md:h-full object-cover">
+                              </div>
+                              <div class="p-6 md:w-2/3">
+                                  <h3 class="text-2xl font-serif font-bold mb-2">Hawa Khalif</h3>
+                                  <p class="text-secondary font-semibold mb-4">Academic Consultant</p>
+                                  <p class="text-gray-700 mb-4">
+                                      Hawa Khalif is a second-year student at Yale University, pursuing a Bachelor's degree in Biomedical Engineering with a certificate in Programming. Hawa has a strong background in teaching and mentoring, having served as a Teaching Assistant for Harvard's renowned CS50 course and as a Peer Embedded Mathematics Tutor at Middlesex Community College.
+                                  </p>
+                                  <div class="flex space-x-4">
+                                      <a href="#" class="text-primary hover:text-secondary">
+                                          <i class="fab fa-linkedin"></i>
+                                      </a>
+                                      <a href="#" class="text-primary hover:text-secondary">
+                                          <i class="fas fa-envelope"></i>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Team Member 2 -->
+                      <div class="team-card bg-white rounded-lg shadow-md overflow-hidden">
+                          <div class="md:flex">
+                              <div class="md:w-1/3">
+                                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                                       alt="Nasra Ali"
+                                       class="w-full h-64 md:h-full object-cover">
+                              </div>
+                              <div class="p-6 md:w-2/3">
+                                  <h3 class="text-2xl font-serif font-bold mb-2">Nasra Ali</h3>
+                                  <p class="text-secondary font-semibold mb-4">College Admissions Specialist</p>
+                                  <p class="text-gray-700 mb-4">
+                                      Nasra Ali is an experienced educator with over a decade of teaching and mentoring students, paired with a strong academic background in business management. As the mother of two daughters who attended MIT and Yale, she combines her professional expertise and personal experience to guide families through the college admissions process.
+                                  </p>
+                                  <div class="flex space-x-4">
+                                      <a href="#" class="text-primary hover:text-secondary">
+                                          <i class="fab fa-linkedin"></i>
+                                      </a>
+                                      <a href="#" class="text-primary hover:text-secondary">
+                                          <i class="fas fa-envelope"></i>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <!-- Team Member 3 -->
+                      <div class="team-card bg-white rounded-lg shadow-md overflow-hidden">
+                          <div class="md:flex">
+                              <div class="md:w-1/3">
+                                  <img src="https://images.unsplash.com/photo-1590086783191-a0694c7d1e6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                                       alt="Bashir Sudi"
+                                       class="w-full h-64 md:h-full object-cover">
+                              </div>
+                              <div class="p-6 md:w-2/3">
+                                  <h3 class="text-2xl font-serif font-bold mb-2">Bashir Sudi</h3>
+                                  <p class="text-secondary font-semibold mb-4">STEM Applications Advisor</p>
+                                  <p class="text-gray-700 mb-4">
+                                      Bashir Sudi is a graduate of the University of Pennsylvania, where he earned a Master's degree in Systems Engineering. As the father of two daughters who attended MIT and Yale, Bashir has firsthand experience navigating the college admissions process. His journey has inspired him to help other families achieve similar success.
+                                  </p>
+                                  <div class="flex space-x-4">
+                                      <a href="#" class="text-primary hover:text-secondary">
+                                          <i class="fab fa-linkedin"></i>
+                                      </a>
+                                      <a href="#" class="text-primary hover:text-secondary">
+                                          <i class="fas fa-envelope"></i>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Terms Section -->
+          <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+              <div class="max-w-4xl mx-auto">
+                  <h2 class="text-3xl font-serif font-bold text-center mb-12">Terms and Conditions</h2>
+                  
+                  <div class="bg-gray-50 p-6 rounded-lg">
+                      <p class="mb-6">Welcome to Nur College Prep! By using our services, you agree to the following:</p>
+                      
+                      <div class="space-y-4">
+                          <div class="flex items-start">
+                              <div class="bg-primary text-white rounded-full p-2 mr-4 mt-1">
+                                  <i class="fas fa-graduation-cap text-sm"></i>
+                              </div>
+                              <div>
+                                  <h3 class="text-lg font-serif font-bold mb-1">Services</h3>
+                                  <p class="text-gray-700">
+                                      We provide personalized college consulting, including guidance on college selection, application strategy, essay support, and interview prep. We do not guarantee admission to any institution.
+                                  </p>
+                              </div>
+                          </div>
+                          
+                          <div class="flex items-start">
+                              <div class="bg-primary text-white rounded-full p-2 mr-4 mt-1">
+                                  <i class="fas fa-user-check text-sm"></i>
+                              </div>
+                              <div>
+                                  <h3 class="text-lg font-serif font-bold mb-1">Client Responsibilities</h3>
+                                  <p class="text-gray-700">
+                                      You agree to provide accurate information, meet deadlines, and actively engage in the process; there is no substitute for hard work and effort!
+                                  </p>
+                              </div>
+                          </div>
+                          
+                          <div class="flex items-start">
+                              <div class="bg-primary text-white rounded-full p-2 mr-4 mt-1">
+                                  <i class="fas fa-money-bill-wave text-sm"></i>
+                              </div>
+                              <div>
+                                  <h3 class="text-lg font-serif font-bold mb-1">Payments</h3>
+                                  <p class="text-gray-700">
+                                      All fees must be paid according to the agreed schedule. Refunds are not provided for completed services.
+                                  </p>
+                              </div>
+                          </div>
+                          
+                          <div class="flex items-start">
+                              <div class="bg-primary text-white rounded-full p-2 mr-4 mt-1">
+                                  <i class="fas fa-lock text-sm"></i>
+                              </div>
+                              <div>
+                                  <h3 class="text-lg font-serif font-bold mb-1">Confidentiality</h3>
+                                  <p class="text-gray-700">
+                                      We respect your privacy and will not share your personal information without consent.
+                                  </p>
+                              </div>
+                          </div>
+                          
+                          <div class="flex items-start">
+                              <div class="bg-primary text-white rounded-full p-2 mr-4 mt-1">
+                                  <i class="fas fa-exclamation-triangle text-sm"></i>
+                              </div>
+                              <div>
+                                  <h3 class="text-lg font-serif font-bold mb-1">Disclaimer</h3>
+                                  <p class="text-gray-700">
+                                      Admission decisions are beyond our control, and we are not liable for outcomes.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <p class="mt-6">By working with us, you acknowledge and accept these terms. Contact us for any questions!</p>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Footer -->
+          <footer class="bg-white border-t border-gray-200 py-8 px-4">
+              <div class="max-w-7xl mx-auto">
+                  <div class="text-center text-gray-800">
+                      <!-- Copyright -->
+                      <p class="mb-4 font-serif">
+                          &copy; 2024 <span class="font-bold">Nur College Prep</span>. All rights reserved.
+                      </p>
+                      
+                      <!-- Business Info -->
+                      <div class="mb-6 text-sm">
+                          <p>nurcollegeprep@gmail.com</p>
+                      </div>
+                  </div>
+              </div>
+          </footer>
         </div>
     </div>
-</nav>
-    <!-- Page Content -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <!-- Header -->
-        <section class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">About Us</h2>
-            <div class="w-24 h-1 bg-secondary mx-auto"></div>
-        </section>
-
-        <!-- Our Inspiration -->
-<!-- Replace the "Our Inspiration" section with this: -->
-<section class="mb-20">
-    <h2 class="text-3xl font-serif font-bold text-center mb-12">Our Inspiration</h2>
-    
-    <div class="flex flex-col lg:flex-row items-center gap-8">
-        <!-- Image Grid (2 columns) -->
-        <div class="lg:w-1/2 grid grid-cols-2 gap-4">
-            <img src="blossom.jpg" alt="Somali spices" 
-                 class="w-full h-48 md:h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
-            <img src="box.jpg" alt="New Haven ingredients"
-                 class="w-full h-48 md:h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform">
-        </div>
-        
-                <div class="lg:w-1/2">
-                    <p class="text-lg mb-4">
-                        Our recipes are born from generations of Somalis who perfected traditional techniques. For us, establishing The Somali Table means introducing the signature flavors and spices
-                        of our home to the baked goods we grew up enjoying in New England. We create fusion desserts that boast the best of both worlds!
-                    </p>
-                    <p class="text-lg mb-4">
-                        The vibrant spices of Mogadishu's markets meet New England's classic desserts in every bite. We honor this fusion through:
-                    </p>
-                    <ul class="list-disc pl-5 text-lg space-y-2 mb-6">
-                        <li>Somali culinary techniques passed down for generations</li>
-                        <li>Highest quality ingredients</li>
-                        <li>Traditional spice blends</li>
-                    </ul>
-                    <p class="text-lg">
-                        All our desserts and baked goods tell a story of cultural connection and culinary innovation.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer (Same as your other pages) -->
-    <footer class="bg-white border-t border-gray-200 py-8 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center text-gray-800">
-                <p class="mb-4 font-serif">
-                    &copy; 2025 <span class="font-bold">The Somali Table</span>. All rights reserved.
-                </p>
-                <div class="bg-rose-50 p-4 rounded-lg max-w-2xl mx-auto border border-rose-200">
-                    <h4 class="font-serif font-bold mb-2 text-primary">
-                        <i class="fas fa-exclamation-circle text-secondary mr-2"></i>
-                        Important Allergy Information
-                    </h4>
-                    <p class="text-sm text-gray-700">
-                        Our kitchen is <span class="font-bold">NOT</span> allergen-free. All food is prepared in an environment 
-                        where common allergens including <span class="font-bold text-primary">nuts, wheat, dairy, eggs, soy, and sesame</span> 
-                        are present.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-    </script>
 </body>
 </html>

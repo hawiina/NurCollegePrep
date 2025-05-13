@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Somali Table</title>
+    <title>Nur College Prep</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,8 +14,8 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#7D0044',
-                        secondary: '#DB63A4',
+                        primary: '#1d3061',
+                        secondary: '#586da1',
                         dark: '#1F2937',
                         light: '#FFFFFF'
                     },
@@ -43,39 +42,39 @@
             transition: opacity 0.3s ease;
         }
         
-        .cookie-card:hover {
+        .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
         }
         
-        .cookie-card {
+        .service-card {
             transition: all 0.3s ease;
         }
         
         h1, h2, h3, h4, h5, h6 {
-            color: #7D0044;
+            color: #1d3061;
         }
     </style>
 </head>
 <body>
     <header class="bg-primary py-4 text-center shadow-md">
         <div class="max-w-7xl mx-auto px-4">
-          <img src="thesomalitable.png" 
-               alt="The Somali Table Logo" 
+          <img src="assets/logo.png" 
+               alt="Nur College Prep Logo" 
                class="h-20 md:h-24 mx-auto hover:scale-105 transition-transform duration-200">
         </div>
       </header>
   <!-- Centered Navigation -->
 <nav class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-center h-16"> <!-- Changed from justify-between to justify-center -->
+        <div class="flex justify-center h-16">
             <div class="hidden md:flex items-center space-x-8">
                 <a href="index.html" class="text-gray-700 hover:text-primary transition py-2">Home</a>
-                <a href="menu.html" class="text-gray-700 hover:text-primary transition py-2">Menu</a>
-                <a href="story.html" class="text-gray-700 hover:text-primary transition py-2">Our Story</a>
+                <a href="packages.html" class="text-gray-700 hover:text-primary transition py-2">Packages</a>
+                <a href="team.html" class="text-gray-700 hover:text-primary transition py-2">Meet The Team</a>
             </div>
             
-            <!-- Mobile menu button (now centered with absolute positioning) -->
+            <!-- Mobile menu button -->
             <div class="md:hidden flex items-center absolute right-4">
                 <button id="mobile-menu-button" class="p-2 rounded-md focus:outline-none">
                     <i class="fas fa-bars text-primary"></i>
@@ -88,170 +87,192 @@
     <div id="page-container">
         <!-- Home Page -->
         <div id="home" class="page-transition min-h-screen">
-          <!-- Replace your hero section with this: -->
+          <section class="hero flex flex-col items-center justify-center text-center pt-12 pb-0">
+              <div class="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+                  <h1 class="text-4xl md:text-5xl font-serif font-bold mb-2">Achieve your fullest academic potential</h1>
+                  <p class="text-xl md:text-2xl mb-8 text-primary">Tailored academic consulting to take your academic journey to the next level</p>
+                  
+                  <a href="#contact" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">
+                      Get Started Now
+                  </a>
+              </div>
+          </section>
 
-<!-- With this version that includes the image: -->
-<section class="hero flex flex-col items-center justify-center text-center pt-12 pb-0">
-    <div class="px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-serif font-bold mb-2">The Somali Table</h1>
-        <p class="text-xl md:text-2xl mb-8 text-primary">Based in New Haven, Connecticut</p>
-        
-        <!-- New Haven Image (16:9 aspect ratio) -->
-        <div class="w-full overflow-hidden rounded-lg shadow-md mt-4">
-            <img src="nhv.jpg" 
-                 alt="New Haven, Connecticut skyline"
-                 class="w-full aspect-video object-cover hover:scale-30 transition-transform duration-100">
-        </div>
-    </div>
-</section>
-<!-- Welcome section (now with reduced top padding) -->
-<section class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-    <div class="text-center">
-        <h2 class="text-3xl font-serif font-bold mb-4">Welcome to The Somali Table!</h2>
-        <div class="max-w-3xl mx-auto">
-            <p class="text-lg mb-6">
-                We're a new family-owned micro bakery offering many of our favorite classics with an East African twist. 
-                You can order our artisan desserts on our HotPlate, which is linked below!
-            </p>
-            <p class="text-lg">
-                Reach us through our DMs on Instagram or Tiktok.
-            </p>
-        </div>
-    </div>
-<!-- ======= CUTE GALLERY ======= -->
-<section class="px-4 py-8 max-w-4xl mx-auto">
- 
-    <!-- Gallery Grid -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-      <!-- Item 1 -->
-      <div class="relative group overflow-hidden rounded-lg aspect-square">
-        <img src="cardamom.jpg" 
-             alt="Blondies"
-             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-      </div>
-      
-      <!-- Item 2 -->
-      <div class="relative group overflow-hidden rounded-lg aspect-square">
-        <img src="lotusbrown.jpg" 
-             alt="Mandazi"
-             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-      </div>
-      
-      <!-- Item 3 -->
-      <div class="relative group overflow-hidden rounded-lg aspect-square">
-        <img src="larger.jpg" 
-             alt="Cookies"
-             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-      </div>
-      
-      <!-- Item 4 -->
-      <div class="relative group overflow-hidden rounded-lg aspect-square">
-        <img src="20250309_193910.jpg" 
-             alt="Pistachio Treats"
-             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
-      </div>
-    </div>
-  </section>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-    <!-- Handcrafted Card -->
-    <div class="bg-white rounded-lg shadow-md p-6 text-center">
-        <i class="fas fa-heart text-4xl text-green-300 mb-4"></i>
-        <h3 class="text-xl font-serif font-bold mb-2">Handcrafted</h3>
-        <p>Each item is made with love and attention to detail, using traditional techniques.</p>
-    </div>
-    
-    <!-- Quality Ingredients Card -->
-    <div class="bg-white rounded-lg shadow-md p-6 text-center">
-        <i class="fas fa-seedling text-4xl text-green-300 mb-4"></i>
-        <h3 class="text-xl font-serif font-bold mb-2">Quality Ingredients</h3>
-        <p>We source the finest ingredients to create unforgettable flavor.</p>
-    </div>
-    
-    <!-- East African Twist Card -->
-    <div class="bg-white rounded-lg shadow-md p-6 text-center">
-        <i class="fas fa-globe-africa text-4xl text-green-300 mb-4"></i>
-        <h3 class="text-xl font-serif font-bold mb-2">East African Twist</h3>
-        <p>Traditional recipes with a unique Somali influence you won't find elsewhere.</p>
-    </div>
-</div>
-<!-- Social Media Section -->
-<section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-serif font-bold text-primary mb-8">Connect With Us</h2>
-    <p class="text-lg mb-12 max-w-2xl mx-auto">
-      Follow our journey for daily treats, behind-the-scenes baking, and special offers!
-    </p>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Instagram -->
-      <a href="https://instagram.com/thesomalitable" 
-         class="group hover:bg-secondary/10 p-6 rounded-lg transition-all duration-300">
-        <div class="flex flex-col items-center">
-            <i class="fab fa-instagram text-4xl" style="color: #DB63A4"></i>
-          <h3 class="text-xl font-serif font-bold text-primary mb-2">Instagram</h3>
-          <p class="text-gray-600">@thesomalitable</p>
-        </div>
-      </a>
-      
-      <!-- TikTok -->
-      <a href="https://tiktok.com/@somalitable" 
-         class="group hover:bg-secondary/10 p-6 rounded-lg transition-all duration-300">
-        <div class="flex flex-col items-center">
-            <i class="fab fa-tiktok text-4xl" style="color: #DB63A4"></i>
-          <h3 class="text-xl font-serif font-bold text-primary mb-2">TikTok</h3>
-          <p class="text-gray-600">@thesomalitable</p>
-        </div>
-      </a>
-      
-      <!-- LinkTree -->
-      <a href="https://linktr.ee/thesomalitable" 
-         class="group hover:bg-secondary/10 p-6 rounded-lg transition-all duration-300">
-        <div class="flex flex-col items-center">
-            <i class="fas fa-link text-4xl" style="color: #DB63A4"></i>
-          <h3 class="text-xl font-serif font-bold text-primary mb-2">LinkTree (Hotplate)</h3>
-          <p class="text-gray-600">All our links, including our Hotplate, in one place</p>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-<!-- Footer with Dark Text -->
-<footer class="bg-white border-t border-gray-200 py-8 px-4 mt-16">
-    <div class="max-w-7xl mx-auto">
-        <div class="text-center text-gray-800"> <!-- Changed to dark text -->
-            <!-- Copyright -->
-            <p class="mb-4 font-serif">
-                &copy; 2025 <span class="font-bold">The Somali Table</span>. All rights reserved.
-            </p>
-            
-            <!-- Business Info -->
-            <p class="mb-6 text-sm">
-                The Somali Table is a registered business in Connecticut, USA.
-            </p>
-            
-            <!-- Allergen Disclaimer -->
-            <div class="bg-rose-50 p-4 rounded-lg max-w-2xl mx-auto border border-rose-200"> <!-- Light pink background -->
-                <h4 class="font-serif font-bold mb-2 text-primary"> <!-- Purple header -->
-                    <i class="fas fa-exclamation-circle text-secondary mr-2"></i> <!-- Pink icon -->
-                    Important Allergy Information
-                </h4>
-                <p class="text-sm text-gray-700"> <!-- Dark gray text -->
-                    Our kitchen is <span class="font-bold">NOT</span> allergen-free. All food is prepared in an environment 
-                    where common allergens including <span class="font-bold text-primary">nuts, wheat, dairy, eggs, soy, and sesame</span> 
-                    are present. We cannot guarantee the absence of cross-contamination.
-                </p>
+          <!-- Gallery Section -->
+          <section class="px-4 py-12 max-w-7xl mx-auto">
+            <h2 class="text-3xl font-serif font-bold text-center mb-8">Our Students' Success</h2>
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <!-- Item 1 -->
+              <div class="relative group overflow-hidden rounded-lg aspect-square">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="Student studying"
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+              </div>
+              
+              <!-- Item 2 -->
+              <div class="relative group overflow-hidden rounded-lg aspect-square">
+                <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="Graduation cap"
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+              </div>
+              
+              <!-- Item 3 -->
+              <div class="relative group overflow-hidden rounded-lg aspect-square">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="Group of students"
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+              </div>
+              
+              <!-- Item 4 -->
+              <div class="relative group overflow-hidden rounded-lg aspect-square">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
+                     alt="College acceptance"
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+              </div>
             </div>
-            
-            <!-- Business Details -->
-            <div class="mt-6 text-xs text-gray-500">
-                <p>New Haven, CT | Cottage Food License </p>
-            </div>
-        </div>
-    </div>
-</footer>
-            </section>
-        </div>
+          </section>
+
+          <!-- About Section -->
+          <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+              <div class="max-w-7xl mx-auto">
+                  <h2 class="text-3xl font-serif font-bold text-center mb-12">Nur College Prep</h2>
+                  <div class="grid md:grid-cols-2 gap-8 items-center">
+                      <div>
+                          <p class="text-lg mb-6">
+                              At Nur College Prep, we specialize in providing personalized academic counseling and essay review services to help high school students navigate the competitive U.S. college admissions process.
+                          </p>
+                          <p class="text-lg">
+                              Our team of professionals, who have attended top institutions like the University of Pennsylvania, Yale, and taught courses such as Harvard's CS50, offer tailored support to students aiming for prestigious colleges and universities.
+                          </p>
+                      </div>
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                               alt="College preparation"
+                               class="w-full rounded-lg">
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- FAQ Section -->
+          <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white" id="faq">
+              <div class="max-w-4xl mx-auto">
+                  <h2 class="text-3xl font-serif font-bold text-center mb-12">Frequently Asked Questions</h2>
+                  <p class="text-center mb-8">Please navigate to the Contact Us page if you can not find an answer to your question.</p>
+                  
+                  <div class="space-y-6">
+                      <!-- FAQ Item 1 -->
+                      <div class="border-b border-gray-200 pb-6">
+                          <h3 class="text-xl font-serif font-bold mb-2">Do I need to have my college list decided before starting to work with you?</h3>
+                          <p class="text-gray-700">Not necessarily. We can help you explore potential schools that align with your academic and personal goals. However, having an idea of your preferences is helpful.</p>
+                      </div>
+                      
+                      <!-- FAQ Item 2 -->
+                      <div class="border-b border-gray-200 pb-6">
+                          <h3 class="text-xl font-serif font-bold mb-2">How do I get started?</h3>
+                          <p class="text-gray-700">Simply fill out our Interest form by clicking on the "Get Started Now" button, or contact us via our email, nurcollegeprep@gmail.com. We'll schedule an initial complementary consultation to discuss your goals and determine the best plan for your needs.</p>
+                      </div>
+                      
+                      <!-- FAQ Item 3 -->
+                      <div class="border-b border-gray-200 pb-6">
+                          <h3 class="text-xl font-serif font-bold mb-2">How many essay drafts do I get with your service?</h3>
+                          <p class="text-gray-700">We provide up to three rounds of feedback on each essay to ensure it's polished and impactful.</p>
+                      </div>
+                      
+                      <!-- FAQ Item 4 -->
+                      <div class="border-b border-gray-200 pb-6">
+                          <h3 class="text-xl font-serif font-bold mb-2">Do you assist with financial aid applications?</h3>
+                          <p class="text-gray-700">Yes, we can guide you through the financial aid process, including completing the FAFSA, understanding CSS Profile requirements, and exploring scholarship opportunities. Our goal is to help you make informed decisions about funding your education.</p>
+                      </div>
+                      
+                      <!-- FAQ Item 5 -->
+                      <div class="border-b border-gray-200 pb-6">
+                          <h3 class="text-xl font-serif font-bold mb-2">What types of students do you work with?</h3>
+                          <p class="text-gray-700">We work with a diverse range of students, from those targeting competitive schools to those looking for the best fit based on their unique goals and aspirations. Whether you're a high school student, transfer applicant, or international student, we're here to support you.</p>
+                      </div>
+                      
+                      <!-- FAQ Item 6 -->
+                      <div class="border-b border-gray-200 pb-6">
+                          <h3 class="text-xl font-serif font-bold mb-2">How long does the process usually take?</h3>
+                          <p class="text-gray-700">The timeline depends on the scope of services you need. For comprehensive guidance, we recommend starting at least 6–12 months before application deadlines to allow ample time for brainstorming, drafting, and refining all aspects of your application.</p>
+                      </div>
+                      
+                      <!-- FAQ Item 7 -->
+                      <div class="border-b border-gray-200 pb-6">
+                          <h3 class="text-xl font-serif font-bold mb-2">What if I need help with only one part of my application?</h3>
+                          <p class="text-gray-700">We offer à la carte services to address specific needs, such as essay feedback, interview preparation, or crafting a college list. You can choose the services that best suit your situation.</p>
+                      </div>
+                      
+                      <!-- FAQ Item 8 -->
+                      <div class="border-b border-gray-200 pb-6">
+                          <h3 class="text-xl font-serif font-bold mb-2">Can parents participate in the process?</h3>
+                          <p class="text-gray-700">Absolutely! We value parental involvement and encourage open communication. Parents can attend meetings, review materials, and ask questions to stay informed and engaged throughout the process.</p>
+                      </div>
+                      
+                      <!-- FAQ Item 9 -->
+                      <div class="pb-6">
+                          <h3 class="text-xl font-serif font-bold mb-2">How are sessions conducted?</h3>
+                          <p class="text-gray-700">We offer flexible options for sessions, including virtual meetings via video calls and phone consultations. We strive to accommodate your schedule and preferences.</p>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- Contact Section -->
+          <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50" id="contact">
+              <div class="max-w-4xl mx-auto">
+                  <h2 class="text-3xl font-serif font-bold text-center mb-12">Contact Us</h2>
+                  <p class="text-center text-xl mb-8">Better yet, send us a message!<br>Feel free to give us a visit through our online office</p>
+                  
+                  <div class="grid md:grid-cols-2 gap-8 mt-12">
+                      <div>
+                          <h3 class="text-xl font-serif font-bold mb-4">Nur College Prep</h3>
+                          <p class="mb-4">
+                              <i class="fas fa-envelope text-secondary mr-2"></i>
+                              <a href="mailto:nurcollegeprep@gmail.com" class="hover:text-primary transition">nurcollegeprep@gmail.com</a>
+                          </p>
+                          
+                          <h4 class="font-serif font-bold mt-6 mb-2">Hours</h4>
+                          <ul class="space-y-2">
+                              <li class="flex justify-between">
+                                  <span>Mon</span>
+                                  <span>09:00 a.m. – 05:00 p.m.</span>
+                              </li>
+                              <li class="flex justify-between">
+                                  <span>Tue</span>
+                                  <span>09:00 a.m. – 05:00 p.m.</span>
+                              </li>
+                              <li class="flex justify-between">
+                                  <span>Wed</span>
+                                  <span>09:00 a.m. – 05:00 p.m.</span>
+                              </li>
+                              <li class="flex justify-between">
+                                  <span>Thu</span>
+                                  <span>09:00 a.m. – 05:00 p.m.</span>
+                              </li>
+                              <li class="flex justify-between">
+                                  <span>Fri</span>
+                                  <span>09:00 a.m. – 05:00 p.m.</span>
+                              </li>
+                              <li class="flex justify-between">
+                                  <span>Sat</span>
+                                  <span>Closed</span>
+                              </li>
+                              <li class="flex justify-between">
+                                  <span>Sun</span>
+                                  <span>Closed</span>
+                              </li>
+                          </ul>
+                      </div>
+                      
+                      <div class="bg-white p-6 rounded-lg shadow-md">
+                          <h3 class="text-xl font-serif font-bold mb-4">Send Us a Message</h3>
+                          <form>
+                              <div class="mb-4">
+                                  <label for="name" class="block mb-2">Name</label>
+                                  <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none

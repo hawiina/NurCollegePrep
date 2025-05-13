@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Delights</title>
+    <title>Packages | Nur College Prep</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/@preline/preline@2.0.0/dist/preline.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,8 +14,8 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#7D0044',
-                        secondary: '#DB63A4',
+                        primary: '#1d3061',
+                        secondary: '#586da1',
                         dark: '#1F2937',
                         light: '#FFFFFF'
                     },
@@ -42,40 +42,39 @@
             transition: opacity 0.3s ease;
         }
         
-        .menu-card:hover {
+        .package-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
         }
         
-        .menu-card {
+        .package-card {
             transition: all 0.3s ease;
         }
         
         h1, h2, h3, h4, h5, h6 {
-            color: #7D0044;
+            color: #1d3061;
         }
     </style>
 </head>
 <body>
-    <!-- Logo Header -->
     <header class="bg-primary py-4 text-center shadow-md">
         <div class="max-w-7xl mx-auto px-4">
-          <img src="thesomalitable.png" 
-               alt="The Somali Table Logo" 
+          <img src="assets/logo.png" 
+               alt="Nur College Prep Logo" 
                class="h-20 md:h-24 mx-auto hover:scale-105 transition-transform duration-200">
         </div>
       </header>
-   <!-- Centered Navigation -->
+  <!-- Centered Navigation -->
 <nav class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-center h-16"> <!-- Changed from justify-between to justify-center -->
+        <div class="flex justify-center h-16">
             <div class="hidden md:flex items-center space-x-8">
                 <a href="index.html" class="text-gray-700 hover:text-primary transition py-2">Home</a>
-                <a href="menu.html" class="text-gray-700 hover:text-primary transition py-2">Menu</a>
-                <a href="story.html" class="text-gray-700 hover:text-primary transition py-2">Our Story</a>
+                <a href="packages.html" class="text-gray-700 hover:text-primary transition py-2">Packages</a>
+                <a href="team.html" class="text-gray-700 hover:text-primary transition py-2">Meet The Team</a>
             </div>
             
-            <!-- Mobile menu button (now centered with absolute positioning) -->
+            <!-- Mobile menu button -->
             <div class="md:hidden flex items-center absolute right-4">
                 <button id="mobile-menu-button" class="p-2 rounded-md focus:outline-none">
                     <i class="fas fa-bars text-primary"></i>
@@ -83,497 +82,32 @@
             </div>
         </div>
     </div>
-    
-    <!-- Mobile menu (unchanged) -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4">
-        <div class="flex flex-col space-y-2">
-            <a href="index.html" class="text-gray-700 hover:text-primary transition py-2">Home</a>
-            <a href="menu.html" class="text-gray-700 hover:text-primary transition py-2">Menu</a>
-            <a href="story.html" class="text-gray-700 hover:text-primary transition py-2">Our Story</a>
-        </div>
-    </div>
-</nav>
 
-    <!-- Menu Page Content -->
-    <div id="menu" class="min-h-screen">
-        <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-serif font-bold mb-4">Our Dessert Menu</h2>
-                <p class="text-lg max-w-3xl mx-auto">
-                    Discover our selection of artisan baked goods, each made with premium ingredients and a labor of love
-                </p>
-            </div>
-            <!-- Stuffed Cookies Section -->
-            <div class="mb-16">
-                <h3 class="text-2xl font-serif font-bold mb-8 text-center">Stuffed Cookies</h3>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Walnut Chocolate Chunk Cookie -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="walnucook.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">1. Walnut Chocolate Chunk Cookie</h4>
-                            <p class="text-gray-600">
-                                Cookie with crunchy walnuts and chocolate chunks, with a gooey hazelnut chocolate center.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Pistachio Chocolate Chip Cookie -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="pist.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">2. Pistachio Chocolate Chip Cookie</h4>
-                            <p class="text-gray-600">
-                                Buttery cookie loaded with chocolate chips and luscious pistachio cream filling.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Biscoff White Chocolate Cookie -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="whitechoc.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">3. Biscoff White Chocolate Cookie</h4>
-                            <p class="text-gray-600">
-                                Cookie with white chocolate chunks and warm spiced Biscoff cookie butter filling.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Death By Chocolate Cookie -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="deat.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">4. Death By Chocolate Cookie</h4>
-                            <p class="text-gray-600">
-                                Fudgy cookie made with premium cocoa, walnuts, loaded with melty chocolate chunks, and stuffed with chocolate hazelnut spread.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                        
-            <!-- Brownies & Bars Section -->
-            <div class="mb-16">
-                <h3 class="text-2xl font-serif font-bold mb-8 text-center">Brownies & Bars</h3>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Strawberry Chocolate Blondie -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="strawblondie.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">1. Strawberry Chocolate Blondie</h4>
-                            <p class="text-gray-600">
-                                Buttery vanilla blondie with roasted strawberry jam pockets and dark chocolate drizzle, finished with toasted almond crunch.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Pistachio White Chocolate Blondie -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="pistachioblondie.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">2. Pistachio White Chocolate Blondie</h4>
-                            <p class="text-gray-600">
-                               Pistachio-infused blondie with a pistachio butter center, a white chocolate drizzle, and topped with crushed toasted pistachios.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Apricot Chocolate Blondie -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="apricotblond.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">3. Apricot Chocolate Blondie</h4>
-                            <p class="text-gray-600">
-                                Vanilla bean blondie with apricot jam pockets and a bittersweet chocolate drizzle, balanced with a hint of sea salt.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Frangipane Almond Blondie -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="fangipne.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">4. Frangipane Almond Blondie</h4>
-                            <p class="text-gray-600">
-                                Almond blondie layered with almond frangipane filling, topped with sliced almonds and powdered sugar.
-                            </p>
-                        </div>
-                    </div>
-                      <!-- Orange Chocolate Blondie -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="orangechoc.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">5. Orange Chocolate Blondie</h4>
-                            <p class="text-gray-600">
-                                Blondie with orange marmalade pockets and a bittersweet chocolate drizzle, balanced with a hint of sea salt.
-                            </p>
-                        </div>
-                    </div>                  
-                    <!-- Lotus Biscoff Brownie -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="lotusbrown.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">6. Biscoff Brownie</h4>
-                            <p class="text-gray-600">
-                               Chewy chocolate brownie stuffed with a cookie butter spread and topped with a Biscoff cookie.
-                            </p>
-                        </div>
-                    </div>
-                                            <!-- Lotus Biscoff blondie -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="biscoffblond.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">7. Biscoff Blondie</h4>
-                            <p class="text-gray-600">
-                               Decadent blondie base with pockets of biscoff cookie butter and topped with crushed biscoff biscuits and white chocolate drizzle.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Mandazi & Muffins Section -->
-            <div class="mb-16">
-                <h3 class="text-2xl font-serif font-bold mb-8 text-center">Mandazi & Muffins</h3>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Classic Mandazi -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="mandaz.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">1. Classic Mandazi</h4>
-                            <p class="text-gray-600">
-                                Light, golden East African beignets infused with aromatic cardamom spice mix, dusted with powdered sugar.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Chocolate Hazelnut Mandazi -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="mandazinut.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">2. Chocolate Hazelnut Mandazi</h4>
-                            <p class="text-gray-600">
-                                Pillowy mandazi stuffed with rich chocolate hazelnut spread, finished with chocolate glaze.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Lotus Biscoff Mandazi -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="lotusmandazi.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">3. Biscoff Mandazi</h4>
-                            <p class="text-gray-600">
-                                Warm, spiced mandazi oozing with caramelized cookie butter, topped with chocolate glaze.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Blueberry Cardamom Muffins -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="blueberry.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">4. Blueberry Cardamom Muffins</h4>
-                            <p class="text-gray-600">
-                                Moist cardamom muffins with blueberries and lemon zest, topped with butter-sugar crust.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Double Chocolate Muffins -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="doubchoc.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">5. Double Chocolate Muffins</h4>
-                            <p class="text-gray-600">
-                                Rich muffins made with dutched cocoa and packed with chocolate chips.
-                            </p>
-                        </div>
-                    </div>
-    
-                    <!-- Chocolate almond Mandazi -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="CHOCALMOND.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">6. Chocolate Almond Mandazi</h4>
-                            <p class="text-gray-600">
-                                Our East African Mandazi, spiced with cardamom and fried golden, but stuffed with chocolate almond spread.
-                            </p>
-                        </div>
-                    </div>
-                    </div>
-            
-            <!-- Breads, Rolls & Loaves Section -->
-            <div class="mb-16">
-                <h3 class="text-2xl font-serif font-bold mb-8 text-center">Breads, Rolls & Loaves</h3>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Cardamom Rolls -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="cardamom.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">1. Cardamom Rolls</h4>
-                            <p class="text-gray-600">
-                                Brioche buns layered with cardamom brown sugar butter, baked golden with cardamom icing.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Cinnamon Rolls -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="cinnamon.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">2. Cinnamon Rolls</h4>
-                            <p class="text-gray-600">
-                               Fluffy, buttery brioche dough swirled with cinnamon sugar and topped with a sweet glaze. 
-                            </p>
-                        </div>
-                    </div>                
-                    <!-- Artisan Sourdough -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="bread.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">3. Artisan Sourdough</h4>
-                            <p class="text-gray-600">
-                                Slow-fermented sourdough with a crisp crust and tangy interior, optionally topped with sesame seeds and/or multigrain dough. Also comes in mini size.
-                            </p>
-                        </div>
-                    </div>
-                                <!-- Mini Sesame Sourdough -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="minisourdough.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">4. Mini Sesame Sourdough</h4>
-                            <p class="text-gray-600">
-                                Our same slow-fermented sourdough with crisp crust and tangy interior, this time topped with black and white sesame seeds and in mini size.
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Lemon Poppyseed Pound Cake -->
-                    <div class="menu-card bg-white rounded-lg shadow-md overflow-hidden">
-                        <div class="flex justify-center p-6">
-                            <div class="flex justify-center p-0 overflow-hidden">
-                                <img 
-                                  src="lemonpound.jpg" 
-                                  alt="Strawberry Chocolate Blondie"
-                                  class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
-                                >
-                              </div>
-                        </div>
-                        <div class="px-6 pb-6">
-                            <h4 class="text-xl font-serif font-bold mb-2">5. Lemon Poppyseed Pound Cake</h4>
-                            <p class="text-gray-600">
-                                Mini buttery pound cake with lemon zest and poppy seeds, finished with tangy lemon glaze.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-    <!-- Footer (Same as your other pages) -->
-    <footer class="bg-white border-t border-gray-200 py-8 px-4">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center text-gray-800">
-                <p class="mb-4 font-serif">
-                    &copy; 2025 <span class="font-bold">The Somali Table</span>. All rights reserved.
-                </p>
-                <div class="bg-rose-50 p-4 rounded-lg max-w-2xl mx-auto border border-rose-200">
-                    <h4 class="font-serif font-bold mb-2 text-primary">
-                        <i class="fas fa-exclamation-circle text-secondary mr-2"></i>
-                        Important Allergy Information
-                    </h4>
-                    <p class="text-sm text-gray-700">
-                        Our kitchen is <span class="font-bold">NOT</span> allergen-free. All food is prepared in an environment 
-                        where common allergens including <span class="font-bold text-primary">nuts, wheat, dairy, eggs, soy, and sesame</span> 
-                        are present.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    </div>
+    <!-- Page Content -->
+    <div id="page-container">
+        <!-- Packages Page -->
+        <div id="packages" class="page-transition min-h-screen">
+          <section class="hero py-16 px-4 sm:px-6 lg:px-8">
+              <div class="max-w-7xl mx-auto text-center">
+                  <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Our Services</h1>
+                  <p class="text-xl text-primary max-w-3xl mx-auto">
+                      Comprehensive packages tailored to your college preparation needs
+                  </p>
+              </div>
+          </section>
 
-    </footer>
-
-    <!-- Mobile menu toggle script -->
-    <script>
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
-    </script>
-</body>
-</html>
+          <!-- Services Section -->
+          <section class="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50">
+              <div class="max-w-4xl mx-auto">
+                  <div class="space-y-8">
+                      <!-- Service 1 -->
+                      <div class="service-card bg-white rounded-lg shadow-md overflow-hidden">
+                          <div class="p-6">
+                              <h3 class="text-2xl font-serif font-bold mb-4 text-primary">1. Academic Counseling</h3>
+                              <p class="text-gray-700 mb-4">
+                                  Our academic counseling is personalized to each student's needs. We start by assessing their academic strengths and weaknesses, helping them choose the right high school courses to build a competitive profile. We'll also work with them on extracurricular planning to ensure they stand out during the application process.
+                              </p>
+                              <p class="text-gray-700">
+                                  From time management strategies to study skills development, we provide comprehensive support to help students excel academically.
+                              </p>
+                          </div
